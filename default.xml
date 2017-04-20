@@ -566,4 +566,7 @@
   <!-- LineageOS additions -->
   <include name="manifests/laos.xml" />
 
+  <!-- beepbeeplechuga additions -->
+  <include name="manifests/beepbeep.xml" />
+
 </manifest>

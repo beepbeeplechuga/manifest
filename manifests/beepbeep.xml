@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <!-- Remotes -->
+  <remote name="bbl"
+          fetch="https://github.com/beepbeeplechuga"
+          revision="refs/heads/nougat" />
+            
+  <remote name="bb"
+          fetch="https://bitbucket.org/" />	
+
+  <!-- Remove Some AOSiP -->
+  <remove-project name="platform_manifest"/>
+  <remove-project name="platform_packages_apps_ThemeInterfacer"/>
+  <remove-project name="platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9"/>
+  <remove-project name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9"/>
+  <remove-project name="platform_vendor_aosip"/>
+  <remove-project name="platform_frameworks_base"/>
+  <remove-project name="platform_packages_apps_Settings"/>
+  <remove-project name="platform_build"/>
+
+  <!-- Start BeepBeepLechuga -->
+  <project name="manifest" path="manifest" remote="bbl" />
+  <project name="vendor_aosip" path="vendor/aosip" remote="bbl" >
+    <linkfile src="tools/sync.sh" dest="sync.sh" />
+  </project>
+  <project name="frameworks_base" path="frameworks/base" remote="bbl" />
+  <project name="packages_apps_Settings" path="packages/apps/Settings" remote="bbl" />
+  <project name="build" path="build" remote="bbl" >
+  <copyfile src="core/root.mk" dest="Makefile" />
+  </project>
+  
+  <!-- BeepBeep OnePlus3 -->  
+  <project name="device_oneplus_oneplus3" path="device/oneplus/oneplus3" remote="bbl" />
+  <project name="kernel_oneplus_msm8996" path="kernel/oneplus/msm8996" remote="bbl" revision="kronic" />
+  <project name="vendor_oneplus" path="vendor/oneplus" remote="bbl" revision="cm-14.1" />
+  <project name="DirtyUnicorns/android_device_oppo_common" path="device/oppo/common" remote="github" revision="n7x-caf" />
+  <project name="LineageOS/android_hardware_cyanogen" path="hardware/cyanogen" remote="github" revision="cm-14.1" />
+  <project name="LineageOS/android_packages_resources_devicesettings" path="packages/resources/devicesettings" remote="github" revision="cm-14.1" />
+
+  <!-- Start 0thers -->
+  <project name="omnirom/android_packages_apps_Gallery2" path="packages/apps/Gallery2" remote="github" revision="android-7.1" />
+  <project name="substratum/interfacer" path="packages/apps/ThemeInterfacer" remote="github" revision="n-rootless" />
+  <project name="omnirom/android_packages_apps_Phonograph" path="packages/apps/Phonograph" remote="github" revision="android-7.1" />
+  <project name="omnirom/android_packages_apps_SnapdragonCamera" path="packages/apps/SnapdragonCamera" remote="github" revision="android-7.1" />
+  
+  <!-- Despair Toolchains -->
+  <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" name="DespairFactor/aarch64-linux-android-4.9" remote="bb" revision="master" />
+  <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-6.x" name="DespairFactor/aarch64-linux-android-6.x" remote="bb" revision="master" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.9" name="DespairFactor/arm-eabi-4.9" remote="bb" revision="master" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-5.x" name="DespairFactor/arm-eabi-5.x" remote="bb" revision="master" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="DespairFactor/arm-linux-androideabi-4.9" remote="bb" revision="master" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-5.x" name="DespairFactor/arm-linux-androideabi-5.x" remote="bb" revision="master" />
+
+</manifest>
