@@ -21,6 +21,7 @@
   <remove-project name="platform_packages_apps_Gallery2"/>
   <remove-project name="platform_packages_apps_MusicFX"/>
   <remove-project name="platform_system_sepolicy"/>
+  <remove-project name="platform_system_core"/>
 
   <!-- Start BeepBeepLechuga -->
   <project name="manifest" path="manifest" remote="bbl" />
@@ -33,6 +34,7 @@
   <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <project name="system_sepolicy" path="system/sepolicy" remote="bbl" />
+  <project name="system_core" path="system/core" remote="bbl" />
 
   <!-- BeepBeep OnePlus3 -->  
   <project name="device_oneplus_oneplus3" path="device/oneplus/oneplus3" remote="bbl" />
