@@ -36,7 +36,7 @@
   <project name="device_oneplus_oneplus3" path="device/oneplus/oneplus3" remote="bbl" />
   <project name="kernel_oneplus_msm8996" path="kernel/oneplus/msm8996" remote="bbl" />
   <project name="vendor_oneplus" path="vendor/oneplus" remote="bbl" />
-  <project name="DirtyUnicorns/android_device_oppo_common" path="device/oppo/common" remote="github" revision="n7x-caf" />
+  <project name="device_oppo_common" path="device/oppo/common" remote="bbl" />
   <project name="LineageOS/android_hardware_cyanogen" path="hardware/cyanogen" remote="github" revision="cm-14.1" />
   <project name="LineageOS/android_packages_resources_devicesettings" path="packages/resources/devicesettings" remote="github" revision="cm-14.1" />
 
