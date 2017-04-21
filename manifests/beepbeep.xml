@@ -19,6 +19,7 @@
   <remove-project name="platform_packages_apps_Settings"/>
   <remove-project name="platform_build"/>
   <remove-project name="platform_packages_apps_Gallery2"/>
+  <remove-project name="platform_packages_apps_MusicFX"/>
 
   <!-- Start BeepBeepLechuga -->
   <project name="manifest" path="manifest" remote="bbl" />
@@ -44,7 +45,8 @@
   <project name="substratum/interfacer" path="packages/apps/ThemeInterfacer" remote="github" revision="n-rootless" />
   <project name="omnirom/android_packages_apps_Phonograph" path="packages/apps/Phonograph" remote="github" revision="android-7.1" />
   <project name="omnirom/android_packages_apps_SnapdragonCamera" path="packages/apps/SnapdragonCamera" remote="github" revision="android-7.1" />
-  
+  <project name="Flash-ROM/packages_apps_MusicFX" path="packages/apps/MusicFX" remote="github" revision="n7.1.2" />
+
   <!-- Despair Toolchains -->
   <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" name="DespairFactor/aarch64-linux-android-4.9" remote="bb" revision="master" />
   <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-6.x" name="DespairFactor/aarch64-linux-android-6.x" remote="bb" revision="master" />
