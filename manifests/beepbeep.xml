@@ -47,7 +47,6 @@
   <!-- Start 0thers -->
   <project name="omnirom/android_packages_apps_Gallery2" path="packages/apps/Gallery2" remote="github" revision="android-7.1" />
   <project name="substratum/interfacer" path="packages/apps/ThemeInterfacer" remote="github" revision="n-rootless" />
-  <project name="omnirom/android_packages_apps_Phonograph" path="packages/apps/Phonograph" remote="github" revision="android-7.1" />
   <project name="omnirom/android_packages_apps_SnapdragonCamera" path="packages/apps/SnapdragonCamera" remote="github" revision="android-7.1" />
   <project name="Flash-ROM/packages_apps_MusicFX" path="packages/apps/MusicFX" remote="github" revision="n7.1.2" />
 
