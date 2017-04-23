@@ -52,7 +52,7 @@
 
   <!-- Despair Toolchains -->
   <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" name="DespairFactor/aarch64-linux-android-4.9" remote="bb" revision="master" />
-  <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9-kernel" name="DespairFactor/aarch64-linux-android-4.9" remote="bb" revision="master" />
+  <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9-kernel" name="AOSiP-Devices/aarch64-linux-android-4.9" remote="github" revision="n-mr1" />
   <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-6.x" name="DespairFactor/aarch64-linux-android-6.x" remote="bb" revision="master" />
   <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-6.x-kernel" name="DespairFactor/aarch64-linux-android-6.x" remote="bb" revision="master" />
   <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.9" name="DespairFactor/arm-eabi-4.9" remote="bb" revision="master" />
